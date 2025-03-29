@@ -5,12 +5,12 @@ class Config(object):
     # Pyrogram Client
     API_ID    = int(os.environ.get("API_ID", "17763538"))  # ⚠️ Required
     API_HASH  = os.environ.get("API_HASH", "babad31b4b434fc53d8bd13370c556c3") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8190350217:AAFPBQoEK96Dkg7ILHM9louqXLt6c8SOJUs") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") # ⚠️ Required
     
     # Other Configs
     BOT_START_TIME = time.time()
     OWNER    = int(os.environ.get("OWNER", "7507408570"))  # ⚠️ Required
-    SUDO = list(map(int, os.environ.get("SUDO", "7538572906 6636904611").split()))  # ⚠️ Required
+    SUDO = list(map(int, os.environ.get("SUDO", "6636904611").split()))  # ⚠️ Required
     # Web Response Config
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
     PORT = int(os.environ.get("PORT", "8080"))
