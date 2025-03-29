@@ -14,7 +14,7 @@ async def handle_start(bot:Client, message:Message):
         [InlineKeyboardButton(text='✨𝐔𝐏𝐃𝐀𝐓𝐄𝐒✨', url='https://t.me/TFW_UPDATES'), InlineKeyboardButton(text='🔮𝐒𝐔𝐏𝐏𝐎𝐑𝐓🔮', callback_data='about')]
         ]
 
-    await message.reply_text(photo="https://files.catbox.moe/k2m8xl.jpg", text=Txt.START_MSG.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(Btn))
+    await message.reply_text(text=Txt.START_MSG.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(Btn))
 
 
 #Restart to cancell all process 
